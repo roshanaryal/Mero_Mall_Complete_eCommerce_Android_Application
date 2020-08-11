@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@android:color/holo_orange_dark"
+    android:elevation="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female jeans tshirt"
+            android:textColor="@android:color/white"
+            android:id="@+id/cart_list_title_product"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 2"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/cart_list_title_product"
+            android:id="@+id/cart_list_quantity"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $200"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/cart_list_quantity"
+            android:gravity="center"
+            android:id="@+id/cart_list_price"
+            style="@style/TextAppearance.AppCompat.Large"
+
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/close_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Close"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:id="@+id/update_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Update"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+
+                />
+        </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_bar_layout_setting"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile"
+
+
+        />
+    <TextView
+        android:id="@+id/setting_change_profile_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_profile_image"
+        android:layout_centerHorizontal="true"
+        android:text="Update image"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/setting_edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+       android:layout_margin="15dp"
+        android:hint="Phone number.."
+        android:background="@drawable/input_design"
+        android:layout_below="@id/setting_change_profile_image_text"
+        />
+    <EditText
+        android:id="@+id/setting_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:hint="Full name.."
+        android:background="@drawable/input_design"
+        android:layout_below="@id/setting_edit_phone"
+        />
+    <EditText
+        android:id="@+id/setting_edit_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:hint="Adress.."
+        android:background="@drawable/input_design"
+        android:layout_below="@id/setting_edit_name"
+        />
+    <Button
+        android:id="@+id/set_decurity_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/buttons"
+        android:text="Set security question"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/setting_edit_adress"
+        />
+
+
+</RelativeLayout>

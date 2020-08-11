@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.CartActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/total_price_cart_text_view"
+        android:gravity="center"
+       android:paddingEnd="30dp"
+
+        android:textColor="@android:color/white"
+
+        android:textStyle="bold"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/total_price_cart_text_view"
+        android:id="@+id/cart_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@id/cart_list_recycler_view"
+        android:textColor="@color/colorPrimary"
+        android:text="Congratulation your order has been placed succesfully soon you will reccive that at yoyr door steps"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#C62828"
+        android:text="Proceed to next"
+        android:id="@+id/next_cartList"
+
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
